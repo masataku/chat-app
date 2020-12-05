@@ -21,5 +21,5 @@ class User < ApplicationRecord
   validates :name, presence: true
 
   has_many :user_rooms
-  has_many :rooms, through: :user_room
+  has_many :rooms, through: :user_rooms
 end
