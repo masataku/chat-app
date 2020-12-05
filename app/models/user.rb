@@ -19,4 +19,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   
   validates :name, presence: true
+
+  has_many :user_rooms
+  has_many :rooms, through: :user_rooms
 end
