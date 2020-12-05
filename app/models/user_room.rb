@@ -1,13 +1,14 @@
 # == Schema Information
 #
-# Table name: rooms
+# Table name: user_rooms
 #
 #  id         :bigint           not null, primary key
-#  name       :string(255)      not null
+#  user_id    :bigint
+#  room_id    :bigint
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-class Room < ApplicationRecord
-  has_many :user_rooms
-  has_many :users, through: :user_room
+class UserRoom < ApplicationRecord
+  belongs_to :user
+  belongs_to :room
 end
