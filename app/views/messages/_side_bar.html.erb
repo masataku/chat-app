@@ -1,6 +1,6 @@
 <div class="side-top">
   <div class="side-top-user">
-    <a href="#">ユーザー</a>
+    <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
   <div class="side-top-room">
   　　<a href="#">部屋作成</a>
