@@ -1,8 +1,10 @@
 .wrapper {
   display: flex;
+  
 }
 .side {
   background-color: #253141;
+  height: 100vh;
   width: 300px;
 }
 .side-top {
@@ -27,7 +29,7 @@
 }
 .side-low-rooms {
   background-color:  #2f3e5f;
-  height: calc(100% - 100px);
+  height: calc(100vh - 100px);
   padding: 0 20px;
   overflow: scroll;
 }
@@ -41,6 +43,7 @@
 
 .main {
   background-color: #ffffff;
+  height: 100%;
   width: calc(100vw - 300px);
 }
 .main-header {
@@ -69,8 +72,9 @@
 }
 .main-middle {
   background-color: #fafafa;
-  height: calc(100% - 190px);
+  height: calc(100vh - 190px);
   padding: 46px 40px 0;
+  overflow: scroll;
 }
 .messages {
   overflow: scroll;
